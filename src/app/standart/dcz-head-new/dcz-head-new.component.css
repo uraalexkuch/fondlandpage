@@ -1,0 +1,675 @@
+.header-top {
+  background: linear-gradient(180deg, #0f0f2f 0%, #000036 100%);
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100vw;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.row {
+  display: inline-block;
+}
+
+.header-top-menu-container {
+  display: flex;
+  justify-content: center; /* Centers the menu items */
+  width: 100%;
+}
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-item:hover a {
+  color: #ebe236;
+}
+
+.app-container ul {
+  list-style-type: none; /* This is traditionally used to remove bullet points from lists */
+  padding: 0;
+}
+
+.app-container li::marker {
+  display: none; /* Newer approach to remove markers */
+}
+
+.mat-drawer {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+  background-color: #273043;
+  color: white;
+}
+
+.page-content {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  height: 92vh;
+}
+
+.mobilebtn {
+  justify-items: center;
+  justify-content: space-between;
+  margin-left: .5rem;
+}
+
+.carbonview {
+  width: auto;
+  color: white;
+}
+
+.btn {
+  font-family: e-Ukraine, sans-serif;
+  text-indent: 0;
+  font-weight: 500;
+  line-height: normal;
+  width: max-content;
+  height: max-content;
+  text-decoration: none;
+  text-align: center;
+  padding: .625rem;
+  margin: 0;
+  display: block;
+  color: #2d5ca6;
+  border: 2px solid #2d5ca6;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #2d5ca6;
+}
+
+.site-header {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  color: #1c1717;
+}
+
+header#masthead {
+  margin-bottom: 3px!important;
+}
+
+.site-header .container {
+  padding: 30px;
+}
+
+.site-header .header-top {
+  background-color: #182a4b;
+  position: relative;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.site-header .brand {
+  position: absolute;
+  width: 100%;
+  top: 46px;
+  left: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 5rem;
+}
+
+.site-name {
+  font-family: e-Ukraine;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 15px;
+  margin-bottom: 4px;
+  color: black;
+}
+
+.site-description {
+  font-family: e-Ukraine;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.header-left-box {
+  float: left;
+  position: relative;
+}
+
+.header-left-box a {
+  display: inline-block;
+}
+
+.header-right-box {
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+  margin-top: -8%;
+  text-align: right;
+}
+
+.header-left-box .left-box .icon {
+  position: relative;
+  width: 10px;
+  height: 40px;
+  background-color: #2669e3;
+  margin-right: 8px;
+}
+
+.header-left-box .left-box .icon:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 10px;
+  height: 20px;
+  background-color: #ffe358;
+}
+
+.header-left-box .left-box .domen {
+  color: #1614d3;
+  font-family: e-Ukraine;
+  font-size: 24px;
+  font-weight: 700;
+  height: 24px;
+  line-height: 0.5;
+}
+
+.header-top .header-right-box {
+  position: relative;
+  z-index: 100;
+}
+
+.link-eyeglasses {
+  text-decoration: none;
+  display: block;
+}
+
+.header-top .header-right-box .link-lang {
+  display: flex;
+  float: right;
+  align-items: center;
+  visibility: hidden;
+}
+
+.bvi-body .header-top .header-right-box .link-lang {
+  margin-left: 20px;
+}
+
+.header-top .header-right-box .link-eyeglasses {
+  margin-bottom: 25px;
+}
+
+.header-right-box .link-eyeglasses img {
+  width: 25px;
+  height: auto;
+  margin-right: 9px;
+}
+
+.header-right-box .link-lang img {
+  width: 30px;
+  height: auto;
+  margin-right: 9px;
+}
+
+.header-right-box .link-lang span, .header-right-box .link-eyeglasses span {
+  color: #80899a;
+  font-family: e-Ukraine;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-right-box .link-lang:hover span, .header-right-box .link-eyeglasses:hover span {
+  color: #fff;
+}
+
+.header-right-box .link-eyeglasses span {
+  margin-top: 0;
+}
+
+.header-top .left-menu {
+  display: flex;
+  float: left;
+  padding-bottom: 1rem;
+}
+
+.header-top .right-menu {
+  width: 222px;
+}
+
+.header-top .right-menu, .footer-top .right-menu {
+  display: flex;
+  float: right;
+  position: relative;
+}
+
+.header-top .soc-info, .footer-top .soc-info {
+  margin-top: 3px;
+}
+
+.header-top .soc-info a, .footer-top .soc-info a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.header-top .soc-info svg, .footer-top .soc-info svg {
+  width: 18px;
+  height: 17px;
+  margin-left: 0;
+  margin-right: 14px;
+}
+
+.header-top .soc-info  a svg .st0, .footer-top .soc-info  a svg .st0 {
+  transition: 0.2s ease-in-out;
+}
+
+.header-top .soc-info  a:hover svg .st0, .header-top .soc-info  a:hover svg {
+  fill: #ffffff;
+}
+
+.footer-top .soc-info  a:hover svg .st0, .footer-top .soc-info  a:hover svg {
+  fill: #004bc1;
+}
+
+.site-header .header-top-menu-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.header-top .menu-box {
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#header-top-menu {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+#header-top-menu {
+  padding: 0;
+  margin: 0;
+}
+
+#header-top-menu > li {
+  margin-right: 10px;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+#header-top-menu li a {
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-family: e-Ukraine;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 19px 12px;
+  transition: color 0.2s ease-in-out;
+}
+
+#header-top-menu li a:hover, #header-top-menu li a:focus {
+  text-decoration: none;
+}
+
+#header-top-menu ul.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -11%!important;
+  box-sizing: border-box;
+  margin-top: .7rem;
+  width: 100vw;
+  display: flex;
+  height: max-content;
+  justify-content: left;
+  justify-items: center;
+  text-align: center;
+  color: white!important;
+  background-color: #273043;
+  z-index: 10;
+}
+
+#header-top-menu ul.sub-menu li {
+  margin-right: 0;
+  width: max-content;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  padding-left: 4% !important;
+}
+
+#header-top-menu ul.sub-menu li a {
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1.1;
+  width: 100%;
+  padding: 19px 0;
+  text-align: left;
+  color: white;
+}
+
+#header-top-menu ul.sub-menu li a:hover {
+  color: #ebe236;
+}
+
+#header-top-menu .menu-item-has-children:hover > a, #header-top-menu .menu-item-has-children > a:focus, #header-top-menu .menu-item-has-children > a.focisin-menu {
+  color: #ebe236 !important;
+}
+
+#header-top-menu .menu-item-has-children.active-menu-item > a {
+  color: #ebe236 !important;
+  background-color: #273043;
+}
+
+#header-top-menu .menu-item-has-children > .sub-menu.visible-menu {
+  opacity: 1;
+  color: #ebe236 !important;
+  visibility: visible;
+}
+
+.custom-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.bvi-body h1 {
+  line-height: 3!important;
+}
+
+.menu-item-type-taxonomy {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.site-header .header-bottom {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.site-header .header-bottom-menu-container {
+  display: table;
+  width: 100vw;
+}
+
+#header-bottom-menu {
+  display: flex;
+  padding-bottom: 0;
+  padding-left: 1.1rem;
+}
+
+#header-bottom-menu li {
+  text-align: left;
+  display: flex;
+  position: relative;
+  padding-left: 0;
+  padding-bottom: 0;
+  width: max-content;
+  white-space: nowrap;
+}
+
+#header-bottom-menu .menu-item-type-taxonomy {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+  border-bottom: 3px transparent solid;
+}
+
+#header-bottom-menu .menu-item-type-taxonomy:hover {
+  padding-bottom: -1rem;
+  border-bottom: 3px #2d5ca6 solid;
+}
+
+#header-bottom-menu li a {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: none;
+  text-decoration: none;
+  color: #273857;
+  font-family: e-Ukraine;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+#header-bottom-menu li a:hover {
+  color: #164391;
+}
+
+#header-bottom-menu .menu-item-has-children:after {
+  content: ' ';
+  width: 25px;
+  height: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+#header-bottom-menu ul.sub-menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100vw;
+  max-height: max-content;
+  overflow: auto;
+  margin: 0!important;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: white;
+  z-index: 10;
+  transition: 0.25s linear opacity;
+  box-shadow: 0 3px 43px 1px rgba(0, 0, 0, 0.3);
+}
+
+ul.sub-menu {
+  height: min-content!important;
+}
+
+#header-bottom-menu ul.sub-menu li {
+  margin-right: 0;
+  width: 100vw;
+  display: block;
+  position: relative;
+  vertical-align: top;
+}
+
+#header-bottom-menu ul.sub-menu li a {
+  display: inline-block;
+  line-height: 1.1;
+  width: 100vw;
+  padding: 0;
+  text-align: left;
+}
+
+.site-header .popup-content {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-bottom {
+  padding: 0;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+.maticon {
+  zoom: 1.5;
+}
+
+@media all and (max-width:992px) {
+  .side-nav {
+    width: 80%;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  #header-bottom-menu1 {
+    padding-left: 1rem;
+  }
+  .btn {
+    font-family: e-Ukraine, sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    width: max-content;
+    height: max-content;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    display: block;
+    color: #2d5ca6;
+    border: 2px solid #2d5ca6;
+    background-color: #fff;
+    padding: .5rem;
+    transition: 0.3s;
+  }
+  #header-bottom-menu {
+    display: inline-block;
+  }
+  #header-top-menu ul.sub-menu li {
+    width: 100vw;
+  }
+  .menu-item-type-taxonomy {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  header-top-menu ul.sub-menu li a {
+    display: inline-block;
+    line-height: 1;
+    padding: 0;
+  }
+  .header-top .menu-box {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.frame-container {
+  padding: 1rem;
+  color: white;
+  justify-content: space-between;
+}
+
+.frame-container, .parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.group-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.group-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.frame-group {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 720px);
+  background: linear-gradient(89.01deg, #27515f 15.03%, #1a335a),
+  linear-gradient(90deg, #fffff5 44.31%, #fff9e1);
+  flex-direction: column;
+  padding: 1rem 0 1rem;
+  gap: 1rem;
+  color: white;
+}
+
+.sub-menu {
+  display: none; /* Hide by default */
+}
+
+.visible-menu {
+  display: block; /* Show when .visible-menu class is added */
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0; /* Align to the left of the parent element */
+  top: 100%; /* Position it right below the trigger element */
+  width: 26vw; /* Adjust width as needed */
+  height: 50vh;
+  padding: 1rem;
+  overflow: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+.header-top-menu-container {
+  width: 100%;
+}
+
+#header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#header-top-menu .menu-item {
+  padding: 0 1rem;
+  white-space: nowrap;
+}

@@ -1,0 +1,45 @@
+.service-box a {
+  text-decoration: none !important;
+}
+.service-box a:hover {
+  text-decoration: underline !important;
+  color: black!important;
+}
+.service-box  {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #1b1d1d;
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-start;
+  width: 100%;
+  background-size: 0 100%; /* Змініть розмір фону на 0, щоб спочатку його не було видно */
+  background-position: 0 100%; /* Почніть фон з крайнього правого краю */
+  background-repeat: no-repeat; /* Забороніть повторення фону */
+}
+.service-boxtitle{
+  color: #080E1A;
+  font-family: e-Ukraine;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  text-align: start;
+  text-decoration: none;
+}
+.section{
+  padding: 3.75rem 0;
+    flex: 1;
+    padding-left: 5%!important;
+    padding-right: 5%!important
+
+}
+.card-title{
+  text-align: left;
+}
+a{
+  color:black;
+}

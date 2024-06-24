@@ -1,0 +1,338 @@
+.rtejustify{
+  text-align: justify;
+}
+.row{
+  height: 20rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.missia{
+  height: 10%;
+  width: 90vw;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.img-fluid-missia{
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+h2, h3, h4, h5, h6 {
+  font-family: e-Ukraine, sans-serif; /* Змініть на ваш шрифт, якщо ви використовуєте інший */
+}
+h1 {
+  font-family: e-UkraineHead, sans-serif!important;
+  font-size: 3.75rem;
+}
+h2 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size: 2.5rem;
+}
+h3 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size:1.875rem;
+}
+h4 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size:1.625rem;
+}
+h5 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size:1.5rem;
+}
+h6 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size:1.25rem;
+}
+.h7 {
+  font-family: e-Ukraine, sans-serif!important;
+  font-size:1rem!important;
+}
+@font-face {
+  font-family: e-Ukraine; /* Назва вашого шрифту */
+  src: url('/assets/fonts/e-Ukraine-Regular.ttf'); /* Шлях до вашого шрифту */
+}
+@font-face {
+  font-family: e-UkraineHead; /* Назва вашого шрифту */
+  src: url('/assets/fonts/e-UkraineHead-Bold.ttf'); /* Шлях до вашого шрифту */
+}
+@font-face {
+  font-family: e-UkraineMedium; /* Назва вашого шрифту */
+  src: url('/assets/fonts/e-Ukraine-Medium.ttf'); /* Шлях до вашого шрифту */
+}
+@font-face {
+  font-family: e-UkraineBold; /* Назва вашого шрифту */
+  src: url('/assets/fonts/e-Ukraine-Bold.ttf'); /* Шлях до вашого шрифту */
+}
+@media only screen and (max-width: 320px) {
+  /* Styles for mobile devices */
+  body {font-size: 14px;
+    overflow-x: hidden;
+
+  }
+  h2 {
+    font-family: e-Ukraine, sans-serif!important;
+    font-size: 1.5rem;
+  }
+}
+@media only screen  and (min-width: 321px)and (max-width: 768px) {
+  /* Styles for mobile devices */
+  body {font-size: 14px;
+    overflow-x: hidden;
+
+  }
+  h2 {
+    font-family: e-Ukraine, sans-serif!important;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets and smaller laptops */
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1536px) {
+  /* Styles for standard laptops and desktops */
+  body {font-size: 16px!important;}
+}
+@media only screen and (min-width: 1537px)  and (max-width: 1920px) {
+  /* Styles for standard laptops and desktops */
+  body {font-size: 18px!important;}
+}
+@media only screen and (min-width: 1921px)  {
+  /* Styles for standard laptops and desktops */
+  body {font-size: 20px!important;}
+}
+.img-fluid {
+  max-width: 35%;
+  height: 70%;
+}
+
+
+
+
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 1ms !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f6f7f6;
+}
+
+.section-title {
+  padding-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #37423b;
+}
+
+
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 63px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.breadcrumbs p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .about .content .learn-more-btn {
+    margin: 0 48px 0 0;
+    padding: 6px 18px;
+  }
+}
+
+
+
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#hero {
+  width: 100%;
+   background: url("/assets/img/fon.png")  top center;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+
+
+}
+
+
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 72px;
+}
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px;
+  }
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  font-family: "e-Ukraine", sans-serif!important;
+}
+
+#hero h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+width: 15%;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 30px;
+  padding:  0.625rem;
+  font-size: 1rem;
+  color: #264493;
+  font-family: e-Ukraine, sans-serif;
+
+  line-height: 1rem;
+  border: 1px #f6f6f6 solid;
+
+  background-image: linear-gradient(90deg, #264493 0%, #4477EEFF 63%);
+  background-size: 0 100%; /* Змініть розмір фону на 0, щоб спочатку його не було видно */
+  background-position: 0 100%; /* Почніть фон з крайнього правого краю */
+  background-repeat: no-repeat; /* Забороніть повторення фону */
+  transition: background-size 0.5s ease; /* Додайте анімацію */
+}
+
+#hero .btn-get-started:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }}

@@ -1,0 +1,39 @@
+<div class="parent6"  style="padding-left: 6% !important;
+  padding-right: 5% !important;" >
+  </div>
+<div class=" section" style="padding-top: 35px;
+    padding-bottom: 35px; width: 100vw; ">
+  <section class="section section-lg bg-gray-100 " style="margin-top: 1rem;margin-bottom: 1rem;padding-left:0;padding-right: 0">
+    <div class="col-12 nameposlug">
+      <h4 class="article-level-1  fw-bold">{{lowdata[0]!.name}}</h4>
+    </div>
+    <div class="row  gy-3" >
+
+      <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-stretch"  *ngFor="let option of lowdata | paginate: { itemsPerPage: maxSize, currentPage: page };  let i = index">
+        <!-- Box Light-->
+        <div class="card service-box "  ><!--pdfs-aos="fade-right" pdfs-aos-delay="100" pdfs-aos-duration="1500">--->
+          <a  href={{option.link}} target="_blank" class="stretched-link">
+
+            <div class="card-title h7 service-boxtitle"><img alt="" height="45" src="https://old.dcz.gov.ua/sites/default/files/mimetypes_pdfdocument_mimetypes_351.png" style="float:left" width="45" />{{option.content}}</div>
+
+          </a>
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="pagination" *ngIf="lowdata && lowdata.length > 0"   >
+      <pagination-controls
+        [maxSize]="maxSize"
+        [directionLinks]="directionLinks"
+        [autoHide]="autoHide"
+        [responsive]="responsive"
+        [previousLabel]="labels.previousLabel"
+        [nextLabel]="labels.nextLabel"
+
+        (pageChange)="page = $event"></pagination-controls>
+    </div>
+  </section>
+
+</div>

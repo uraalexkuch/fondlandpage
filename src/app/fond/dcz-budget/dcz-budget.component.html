@@ -1,0 +1,29 @@
+<div class="row " *ngIf="!isMobile" style="padding-left: 6%; padding-right: 5%;">
+  <div class="col-12">
+
+  </div>
+</div>
+
+<section class="section section-lg bg-gray-100 " style="margin-top: 1rem; margin-bottom: 1rem; padding-left:0; padding-right: 0">
+  <div class="col-12 nameposlug">
+    <h4 class="article-level-1 fw-bold">Бюджет</h4>
+  </div>
+  <div class="row gy-3">
+    <div class="col-sm-12 col-md-12 col-lg-6 d-flex align-items-stretch" *ngFor="let item of dczservice; let i = index">
+      <div class="card service-box">
+        <a *ngIf="isExternalLink(item.link)" href="{{item.link}}" target="_blank" rel="noopener noreferrer" class="stretched-link">
+          <div class="card-body">
+            <h5 class="card-title service-boxtitle">{{item.title}}</h5>
+            <div class="h7 card-text service-boxtext">{{item.content}}</div>
+          </div>
+        </a>
+        <a *ngIf="!isExternalLink(item.link)" [routerLink]="item.link" class="stretched-link">
+          <div class="card-body">
+            <h5 class="card-title service-boxtitle">{{item.title}}</h5>
+            <div class="h7 card-text service-boxtext">{{item.content}}</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
