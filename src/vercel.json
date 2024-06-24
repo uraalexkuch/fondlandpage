@@ -1,12 +1,14 @@
 {
-  "rewrites": [
+  "redirects": [
     {
       "source": "/www.dcz.gov.ua/base/getlow",
-      "destination": "https://www.dcz.gov.ua/base/getlow"
+      "destination": "https://www.dcz.gov.ua/base/getlow",
+      "permanent": true
     },
     {
       "source": "/www.dcz.gov.ua/base/getfond",
-      "destination": "https://www.dcz.gov.ua/base/getfond"
+      "destination": "https://www.dcz.gov.ua/base/getfond",
+      "permanent": true
     }
   ]
 }
