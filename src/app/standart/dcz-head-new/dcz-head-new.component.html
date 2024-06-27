@@ -11,9 +11,9 @@
         <span class="div h7">Налаштування доступності</span>
       </div>
       <div *ngIf="isMobile" class="col-auto">
-        <div mat-icon-button (click)="sidenav?.toggle()" matTooltip="Menu">
+        <button mat-icon-button (click)="toggleSidenav()" matTooltip="Menu">
           <mat-icon class="maticon" style="color: white;">menu</mat-icon>
-        </div>
+        </button>
       </div>
     </div>
     <div class="menu-box row">
@@ -34,7 +34,7 @@
   </div>
 </div>
 <mat-sidenav-container *ngIf="isMobile" class="app-container">
-  <mat-sidenav #sidenav mode="over" [class.mat-elevation-z4]="true" class="app-sidenav">
+  <mat-sidenav #sidenav mode="over" class="app-sidenav">
     <div class="row justify-content-between" style="display: flex; margin-top:.5rem;height:max-content;justify-items: center;justify-content: left">
       <button mat-icon-button style="padding: 6px;color: white" (click)="toggleSidenav()" class="close-button">
         <mat-icon>close</mat-icon>

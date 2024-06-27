@@ -220,7 +220,8 @@ justify-items: center;
   height: 50% !important;
 }
 .img-fluid{
-  max-height: 40vh !important;
+  height: 35vh !important;
+  width: 19vw!important;
 }
 
 .team .member:hover .social {
@@ -230,6 +231,7 @@ justify-items: center;
 
 @media all and (max-width:992px) {
   .img-fluid{
+    width: 100%!important;
   }
   .row {
     --bs-gutter-x:0!important;

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import {Fond} from "../models/fond";
 import {LoadFondService} from "../../services/load-fond.service";
-import {NgForOf} from "@angular/common";
+import {NgForOf, NgIf} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {MatCard, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 
@@ -14,7 +14,7 @@ import {MatCard, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
   standalone: true,
   providers: [LoadFondService],
   imports: [
-    NgForOf, HttpClientModule, MatCard, MatCardTitle, MatCardSubtitle
+    NgForOf, HttpClientModule, MatCard, MatCardTitle, MatCardSubtitle, NgIf
   ],
 
 
@@ -23,7 +23,7 @@ import {MatCard, MatCardSubtitle, MatCardTitle} from "@angular/material/card";
 export class DczFondComponent implements OnInit {
     fonddata: Fond[] = [];
     groupedData: { category: string, items: Fond[] }[] = [];
-
+isShow: boolean = false;
 
     constructor(private dataService: LoadFondService) {}
 
@@ -31,6 +31,10 @@ export class DczFondComponent implements OnInit {
         AOS.init();
         this.loadData();
     }
+  showHeading(): boolean {
+         return this.groupedData.some(group =>
+                group.category == 'Голова правління Фонду')
+        }
 
     loadData() {
         this.dataService.getFond().subscribe({
